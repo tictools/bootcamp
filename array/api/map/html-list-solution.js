@@ -28,7 +28,7 @@ const $users = users.map((user) => {
   //create <p> for fullName and append
   const $fullName = $createElement("p");
   $addClassTo($fullName, "user__full-name");
-  const $fullNameText = $createText(`${user.first_name} ${user.last_name}`);
+  const $fullNameText = $createText(`${user.firstName} ${user.lastName}`);
   $appendChild($fullName, $fullNameText);
   $appendChild($li, $fullName);
 

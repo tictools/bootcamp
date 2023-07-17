@@ -14,8 +14,8 @@ const extendUsers = (usersList) => {
     return {
       avatar: user.avatar,
       email: user.email,
-      first_name: user.first_name,
-      last_name: user.last_name,
+      firstName: user.firstName,
+      lastName: user.lastName,
       isEnabled: isUserEnabled,
       id: userId,
     };
