@@ -1,3 +1,4 @@
+import users from "../../data/users.js";
 import {
   $addClassTo,
   $appendChild,
@@ -5,7 +6,6 @@ import {
   $createText,
   $getElementBy,
 } from "../../utils/dom.js";
-import users from "../users/index.js";
 
 /**
  * Create an unordered list <ul> of users.

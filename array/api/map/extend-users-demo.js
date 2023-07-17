@@ -1,4 +1,4 @@
-// import users from "../users/index.js";
+// import users from "../../data/users.js";
 
 /**
  * Map users to extend own properties
