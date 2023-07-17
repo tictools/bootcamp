@@ -6,7 +6,7 @@ The `map()` method creates a new array populated with the results of calling a p
 
 ## Signature
 
-![map signature](../../../assets/map-signature.png)
+![map signature](../../assets/map-signature.png)
 
 ### Parameters
 
