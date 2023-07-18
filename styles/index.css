@@ -19,7 +19,6 @@ h2 {
 
 h2 {
   text-align: right;
-  width: 55%;
 }
 
 .container {
@@ -37,7 +36,7 @@ h2 {
   gap: 16px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .method__return {
