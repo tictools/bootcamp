@@ -1,5 +1,5 @@
 const numbers = [1, 2, 3, 4, 5];
-const strings = ["java", "C++", "javascript", "C#", "Typescript"];
+const strings = ["Java", "C++", "JavaScript", "C#", "TypeScript"];
 
 /**
  * Given a list of numbers, return an array with numbers multiplied per two
