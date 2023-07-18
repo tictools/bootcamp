@@ -9,6 +9,7 @@ const feedMonkeys = (monkeys) => {
     const feededMonkey = `${monkey} 🍌`;
     return feededMonkey;
   });
+
   return feededMonkeys;
 };
 

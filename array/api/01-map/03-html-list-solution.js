@@ -20,18 +20,19 @@ $appendChild($container, $ul);
 
 const $users = users.map((user) => {
   const $li = $createElement("li");
+
   //create <p> for fullName and append
   const $avatar = $createElement("img");
-  $addClassTo($avatar, "user__avatar");
   $avatar.setAttribute("src", `${user.avatar}`);
   $appendChild($li, $avatar);
+  $addClassTo($avatar, "user__avatar");
 
   //create <p> for fullName and append
   const $fullName = $createElement("p");
-  $addClassTo($fullName, "user__full-name");
   const $fullNameText = $createText(`${user.firstName} ${user.lastName}`);
   $appendChild($fullName, $fullNameText);
   $appendChild($li, $fullName);
+  $addClassTo($fullName, "user__full-name");
 
   //create <p> for mail and append
   const $mail = $createElement("p");
