@@ -6,7 +6,16 @@ The `map()` method creates a new array populated with the results of calling a p
 
 ## Signature
 
-![map signature](../../assets/map-signature.png)
+```javascript
+const numbers = [1, 2, 3];
+
+const numbersPerIndexAndLength = numbers.map((number, index, numbers) => {
+  const numberForIndex = number * index * numbers.length;
+  return numberForIndex;
+});
+
+console.log(numbersPerIndexAndLength); // [ 0, 6, 18 ]
+```
 
 ### Parameters
 
