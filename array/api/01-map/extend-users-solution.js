@@ -24,5 +24,7 @@ const extendUsers = (usersList) => {
 
 const extendedUsers = extendUsers(users);
 
-console.log(users);
-console.log(extendedUsers);
+console.log(
+  "🚀 ~ file: extend-users-solution.js:26 ~ extendedUsers:",
+  extendedUsers
+);

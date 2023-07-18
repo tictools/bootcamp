@@ -14,6 +14,7 @@ import {
  */
 
 const $container = $getElementBy(".collection");
+console.log("🚀 ~ file: html-list-solution.js:17 ~ container:", $container);
 const $ul = $createElement("ul");
 $appendChild($container, $ul);
 

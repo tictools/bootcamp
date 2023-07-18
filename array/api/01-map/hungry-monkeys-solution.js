@@ -1,14 +1,18 @@
 /**
- * Map 'hungryMonkeys' collection to ensure each monkey has one bannana
+ * Define method 'feedMonkeys' to map 'hungryMonkeys' collection so you will ensure each monkey has one bannana
  */
-const hungryMonkeys = ["🐒", "🦍", "🦧"];
 
-const feededMonkeys = hungryMonkeys.map((monkey) => {
-  const feededMonkey = `${monkey} 🍌`;
-  return feededMonkey;
-});
+const hungryMonkeysList = ["🐒", "🦍", "🦧"];
 
-console.log("🚀 ~ feededMonkeys:", feededMonkeys);
+const feedMonkeys = (monkeys) => {
+  const feededMonkeys = monkeys.map((monkey) => {
+    const feededMonkey = `${monkey} 🍌`;
+    return feededMonkey;
+  });
+  return feededMonkeys;
+};
 
-// const mapHungryMonkeys = (monkey) => `${monkey} 🍌`;
-// const feededMonkeys = hungryMonkeys.map((monkey) => mapHungryMonkeys(monkey));
+console.log(
+  "🚀 ~ file: hungry-monkeys-solution.js:8 ~ feedMonkeys ~ feedMonkeys:",
+  feedMonkeys(hungryMonkeysList)
+);

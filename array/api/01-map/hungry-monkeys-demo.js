@@ -1,5 +1,5 @@
 /**
- * Map 'hungryMonkeys' collection to ensure each monkey has one bannana
+ * Define method 'feedMonkeys' to map 'hungryMonkeys' collection so you will ensure each monkey has one bannana
  */
 
 const hungryMonkeys = ["🐒", "🦍", "🦧"];
