@@ -6,17 +6,6 @@ The `map()` method creates a new array populated with the results of calling a p
 
 ## Signature
 
-```javascript
-const numbers = [1, 2, 3];
-
-const numbersPerIndexAndLength = numbers.map((number, index, numbers) => {
-  const numberForIndex = number * index * numbers.length;
-  return numberForIndex;
-});
-
-console.log(numbersPerIndexAndLength); // [ 0, 6, 18 ]
-```
-
 ### Parameters
 
 - callbackFn: `(element, index, array) => {//...}`
@@ -25,6 +14,17 @@ console.log(numbersPerIndexAndLength); // [ 0, 6, 18 ]
 ### Return
 
 - A **new array** with each element being the result of the callback function.
+
+```javascript
+const numbers = [1, 2, 3];
+
+const numbersPerIndexAndLength = numbers.map((number, index, numbers) => {
+  const numberPerIndexAndLength = number * index * numbers.length;
+  return numberPerIndexAndLength;
+});
+
+console.log(numbersPerIndexAndLength); // [ 0, 6, 18 ]
+```
 
 ## Docs source
 
