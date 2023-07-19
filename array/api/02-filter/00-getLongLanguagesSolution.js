@@ -8,7 +8,7 @@ const languagesList = ["Java", "C++", "JavaScript", "C#", "TypeScript"];
  *
  * expected: ['JavaScript', 'TypeScript']
  */
-const getLonglasnguages = (languages) => {
+const getLongLanguages = (languages) => {
   const longLanguages = languages.filter((language) => {
     const isLongLanguage = language.length >= 5;
     return isLongLanguage;
@@ -16,3 +16,8 @@ const getLonglasnguages = (languages) => {
 
   return longLanguages;
 };
+
+console.log(
+  "🚀 ~ file: 00-getLongLanguagesSolution.js:12 ~ getLongLanguages ~ getLongLanguages:",
+  getLongLanguages(languagesList)
+);
