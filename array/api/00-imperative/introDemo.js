@@ -21,8 +21,8 @@ const WORDS = ["Java", "C++", "JavaScript", "C#", "TypeScript"];
  */
 
 /**
- * Given a list of numbers, define function 'sumNumbers' to return its sum value
+ * Given 'NUMBERS' array, define function 'sumNumbers' to return its sum value
  * use for() instruction
  *
- * expected: ['🐒 🍌', '🦍 🍌', '🦧 🍌']
+ * expected: 15
  */
