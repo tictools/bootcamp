@@ -23,7 +23,7 @@ const isGreaterThanTen = numbers.filter((number) => {
   return isGreater;
 });
 
-console.log(numbersPerIndexAndLength); // [ 12, 14, 16, 10, 20 ]
+console.log(isGreaterThanTen); // [ 12, 14, 16, 10, 20 ]
 ```
 
 ## Docs source
