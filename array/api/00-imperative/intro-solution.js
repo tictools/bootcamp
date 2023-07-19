@@ -1,27 +1,38 @@
-const numbersList = [1, 2, 3, 4, 5];
-const wordsList = ["Java", "C++", "JavaScript", "C#", "TypeScript"];
+/**
+ * CONSTANTS
+ */
+
+const monkeys = ["🐒", "🦍", "🦧"];
+const numbers = [1, 2, 3, 4, 5];
+const words = ["Java", "C++", "JavaScript", "C#", "TypeScript"];
 
 /**
- * Given a list of numbers, define function 'duplicateNumbers' to return an array with numbers multiplied per two
+ * Given 'monkeys' array, define function 'feedMonkeys' to return an array where each monkey has one bannana
+ * use for() instruction
+ *
+ * expected: ['🐒 🍌', '🦍 🍌', '🦧 🍌']
  */
-const duplicateNumbers = (numbers) => {
-  const multipliedNumbers = [];
+const feedMonkeys = (monkeys) => {
+  const feededMonkeys = [];
 
-  for (let i = 0; i < numbers.length; i++) {
-    const multipliedNumber = numbers[i] * 2;
-    multipliedNumbers.push(multipliedNumber);
+  for (let i = 0; i < monkeys.length; i++) {
+    const feededMonkey = monkeys[i] + "🍌";
+    feededMonkeys.push(feededMonkey);
   }
 
-  return multipliedNumbers;
+  return feededMonkeys;
 };
 
 console.log(
-  "🚀 ~ file: intro-solution.js:14 ~ duplicateNumbers ~ duplicateNumbers:",
-  duplicateNumbers(numbersList)
+  "🚀 ~ file: intro-solution.js:14 ~ feedMonkeys ~ feedMonkeys:",
+  feedMonkeys(monkeys)
 );
 
 /**
- * Given a list of strings, define function 'getLongWords' to return an array only with strings with length equal or greater then 5
+ * Given 'words' array, define function 'getLongWords' to return an array only with strings with length equal or greater then 5
+ * use for() instruction
+ *
+ * expected: ['JavaScript', 'TypeScript']
  */
 const getLongWords = (words) => {
   const longStrings = [];
@@ -37,11 +48,14 @@ const getLongWords = (words) => {
 
 console.log(
   "🚀 ~ file: intro-solution.js:14 ~ getLongWords ~ getLongWords:",
-  getLongWords(wordsList)
+  getLongWords(words)
 );
 
 /**
- * Given a list of numbers, define function 'sumNumbers' to return its sum value
+ * Given 'numbers' array, define function 'sumNumbers' to return its sum value
+ * use for() instruction
+ *
+ * expected: 15
  */
 const sumNumbers = (numbers) => {
   let sum = 0;
@@ -55,5 +69,5 @@ const sumNumbers = (numbers) => {
 
 console.log(
   "🚀 ~ file: intro-solution.js:14 ~ sumNumbers ~ sumNumbers:",
-  sumNumbers(numbersList)
+  sumNumbers(numbers)
 );
