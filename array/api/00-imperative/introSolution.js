@@ -35,15 +35,15 @@ console.log(
  * expected: ['JavaScript', 'TypeScript']
  */
 const getLongWords = (words) => {
-  const longStrings = [];
+  const longWords = [];
 
   for (let i = 0; i < words.length; i++) {
     if (words[i].length >= 5) {
-      longStrings.push(words[i]);
+      longWords.push(words[i]);
     }
   }
 
-  return longStrings;
+  return longWords;
 };
 
 console.log(
