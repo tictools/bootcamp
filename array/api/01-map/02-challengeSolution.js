@@ -1,11 +1,11 @@
 /**
  * CONSTANTS
  */
-const NUMBERS = [2, 5, 100];
+const secondsList = [2, 5, 100];
 
-const NAMES = ["john", "JACOB", "jinGleHeimer", "schmidt"];
+const matesList = ["john", "JACOB", "jinGleHeimer", "schmidt"];
 
-const VIPS = [
+const vipsList = [
   {
     name: "Foo",
     age: 80,
@@ -29,11 +29,11 @@ const VIPS = [
 ];
 
 /**
- * Given NUMBERS array, define function 'transformNumbersToWords' to return an array of strings from numbers
+ * Given secondsList array, define function 'transformSecondsToWords' to return an array of strings from numbers
  *
  * expected: ["2", "5", "100"]
  */
-const transformNumbersToWords = (numbers) => {
+const transformSecondsToWords = (numbers) => {
   const transformedNumbers = numbers.map((number) => {
     return number.toString();
   });
@@ -42,16 +42,16 @@ const transformNumbersToWords = (numbers) => {
 };
 
 console.log(
-  "🚀 ~ file: challenge-solution.js:37 ~ transformNumbersToWords ~ transformNumbersToWords:",
-  transformNumbersToWords(NUMBERS)
+  "🚀 ~ file: challenge-solution.js:37 ~ transformSecondsToWords ~ transformSecondsToWords:",
+  transformSecondsToWords(secondsList)
 );
 
 /**
- * Given NAMES array, define function 'capitalizeNames' to return an array of strings with capitalized names
+ * Given matesList array, define function 'capitalizeMates' to return an array of strings with capitalized names
  *
  * expected: ["John", "Jacob", "Jingleheimer", "Schmidt"]
  */
-const capitalizeNames = (names) => {
+const capitalizeMates = (names) => {
   const capitalizedNames = names.map((name) => {
     const lowerCasedName = name.toLowerCase();
     const capitalizedName = `${lowerCasedName
@@ -65,16 +65,16 @@ const capitalizeNames = (names) => {
 };
 
 console.log(
-  "🚀 ~ file: challenge-solution.js:55 ~ capitalizeNames ~ capitalizeNames:",
-  capitalizeNames(NAMES)
+  "🚀 ~ file: challenge-solution.js:55 ~ capitalizeMates ~ capitalizeMates:",
+  capitalizeMates(matesList)
 );
 
 /**
- * Given VIPS array, define function 'namesOnly' to return an array of strings only with vips names
+ * Given vipsList array, define function 'extractVipsNames' to return an array of strings only with vips names
  *
  * expected: [ 'Foo', 'Bar', 'Fizz', 'Buzz', 'FizzBuzz' ]
  */
-const namesOnly = (vips) => {
+const extractVipsNames = (vips) => {
   const vipsNames = vips.map((vip) => {
     return vip.name;
   });
@@ -82,12 +82,12 @@ const namesOnly = (vips) => {
 };
 
 console.log(
-  "🚀 ~ file: challenge-solution.js:49 ~ namesOnly ~ namesOnly:",
-  namesOnly(VIPS)
+  "🚀 ~ file: challenge-solution.js:49 ~ extractVipsNames ~ extractVipsNames:",
+  extractVipsNames(vipsList)
 );
 
 /**
- * Given VIPS array, define function 'goToTheMatrix' to return an array of strings with a new message depending on the age
+ * Given vipsList array, define function 'goToTheMatrix' to return an array of strings with a new message depending on the age
  *
  * if vips are over 18, they can go to the Matrix
  * otherwise, they are under age
@@ -108,11 +108,11 @@ const goToTheMatrix = (vips) => {
 
 console.log(
   "🚀 ~ file: challenge-solution.js:58 ~ goToTheMatrix ~ goToTheMatrix:",
-  goToTheMatrix(VIPS)
+  goToTheMatrix(vipsList)
 );
 
 /**
- * Given VIPS array, define function 'appendVipsInDOM' to return an array of strings with vip name wrapped in tag <h1> and age wrapped in tag <h2>
+ * Given vipsList array, define function 'appendVipsInDOM' to return an array of strings with vip name wrapped in tag <h1> and age wrapped in tag <h2>
  * if vips is over 18, they can go to the Matrix
  * otherwise, they are under age
  *
@@ -128,5 +128,5 @@ const appendVipsInDOM = (vips) => {
 
 console.log(
   "🚀 ~ file: challenge-solution.js:66 ~ appendVipsInDOM ~ appendVipsInDOM:",
-  appendVipsInDOM(VIPS)
+  appendVipsInDOM(vipsList)
 );

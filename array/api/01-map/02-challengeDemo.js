@@ -1,9 +1,9 @@
 /**
  * CONSTANTS
  */
-const NUMBERS = [2, 5, 100];
+const SECONDS = [2, 5, 100];
 
-const NAMES = ["john", "JACOB", "jinGleHeimer", "schmidt"];
+const MATES = ["john", "JACOB", "jinGleHeimer", "schmidt"];
 
 const VIPS = [
   {
@@ -29,19 +29,19 @@ const VIPS = [
 ];
 
 /**
- * Given NUMBERS array, define function 'transformNumbersToWords' to return an array of strings from numbers
+ * Given SECONDS array, define function 'transformSecondsToWords' to return an array of strings from numbers
  *
  * expected: ["2", "5", "100"]
  */
 
 /**
- * Given NAMES array, define function 'capitalizeNames' to return an array of strings with capitalized names
+ * Given MATES array, define function 'capitalizeMates' to return an array of strings with capitalized names
  *
  * expected: ["John", "Jacob", "Jingleheimer", "Schmidt"]
  */
 
 /**
- * Given VIPS array, define function 'namesOnly' to return an array of strings only with vips names
+ * Given VIPS array, define function 'extractVipsNames' to return an array of strings only with vips names
  *
  * expected: [ 'Foo', 'Bar', 'Fizz', 'Buzz', 'FizzBuzz' ]
  */
