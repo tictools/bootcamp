@@ -1,8 +1,15 @@
+/**
+ * CONSTANTS
+ */
+
+const monkeys = ["🐒", "🦍", "🦧"];
 const numbers = [1, 2, 3, 4, 5];
 const words = ["Java", "C++", "JavaScript", "C#", "TypeScript"];
 
 /**
- * Given a list of numbers, define function 'duplicateNumbers' to return an array with numbers multiplied per two
+ * Given 'hungryMonkeys' array, define function 'feedMonkeys' to map 'hungryMonkeys' collection so you will ensure each monkey has one bannana
+ *
+ * expected: ['🐒 🍌', '🦍 🍌', '🦧 🍌']
  */
 
 /**
