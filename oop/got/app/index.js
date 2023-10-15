@@ -54,18 +54,58 @@ const bronn = new Squire(bronnInitialValues);
 characters.push(bronn);
 
 // Communicate
-console.log(joffreyBaratheon.communicate());
-console.log(jaimeLannister.communicate());
-console.log(daenerysTargaryen.communicate());
-console.log(tyrionLannister.communicate());
-console.log(bronn.communicate());
+// console.log(joffreyBaratheon.communicate());
+// console.log(jaimeLannister.communicate());
+// console.log(daenerysTargaryen.communicate());
+// console.log(tyrionLannister.communicate());
+// console.log(bronn.communicate());
 
-// Communicate
-const mappedCharacters = characters.map((character) => ({
+const toJSON = (character) => ({
   type: character.constructor.name,
   name: character.name,
   isAlive: character.isAlive,
   age: character.age,
-}));
+});
 
-console.log(mappedCharacters);
+// FooXXX
+const udpateCharacter = (characters) => (character) => ({
+  ...characters[character.type],
+  characters: [
+    ...characters[character.type].characters,
+    {
+      name: character.name,
+      age: character.age,
+      isAlive: character.isAlive,
+    },
+  ],
+});
+
+const createCharacter = (character) => ({
+  type: character.type,
+  characters: [
+    {
+      name: character.name,
+      age: character.age,
+      isAlive: character.isAlive,
+    },
+  ],
+});
+
+const charactersToJSON = (charactersList) => {
+  const charactersJSON = {};
+
+  charactersList.forEach((character) => {
+    const currentCharacter = toJSON(character);
+
+    if (charactersJSON[currentCharacter.type]) {
+      charactersJSON[currentCharacter.type] =
+        udpateCharacter(charactersJSON)(currentCharacter);
+    } else {
+      charactersJSON[currentCharacter.type] = createCharacter(currentCharacter);
+    }
+  });
+
+  return charactersJSON;
+};
+
+console.log(charactersToJSON(characters));
